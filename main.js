@@ -14,8 +14,6 @@ function changeSocialMedia() {
         const social = li.getAttribute('class')
 
         li.children[0].href = `https://www.${social}.com/${linksSocialMedia[social]}`
-
-        // alert(li.children[0].href)
     }
 }
 
