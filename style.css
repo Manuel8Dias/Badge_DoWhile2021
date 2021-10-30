@@ -23,8 +23,8 @@ body {
 
 .circle {
     position: relative;
-    width: 900px;
-    height: 900px;
+    width: 56.25rem;
+    height: 56.25rem;
     top: calc(50% - (width / 2));
     left: calc(50% - (height / 2));
     border-radius: 50%;
@@ -34,36 +34,51 @@ body {
 
 main {
     background: url(images/background.svg) no-repeat center/cover;
-    width: 100vw;
-    min-height: 812px;
-    height: 100vh;
+    width: 23.4375rem;
+    height: 50.75rem;
+    
 }
 
 .container {
-    max-width: 250px;
+    position: relative;
+    max-width: 15.625rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: var(--grey);
 }
 
+.hole {
+    display: none;
+    position: relative;
+    width: 5rem;
+    height: 0.5rem;
+    background-color: var(--black);
+    border-radius: 2px;
+    top: 2rem;
+    left: calc(2.8125rem + 2.5rem);
+}
+
 .avatar { 
     width: 10rem;
-    margin: 11.5rem auto 0;
+    height: 11.5rem;
+    margin: 11.45rem auto 0;
     position: relative;
 }
 
 .avatar span {
     position: absolute;
-    top: -15px;
+    top: -0.9375rem;
     z-index: 1;
+    width: 5rem;
+    height: 5rem;
 }
 
 .avatar > img {
     width: 10rem;
     height: 11.5rem;
     object-fit: cover;
-    margin-top: 2px;
+    margin-top: 0.125rem;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 73%, 0 25%);
 }
 
@@ -83,8 +98,18 @@ a {
     align-items: center;
 }
 
-p {
-    margin-top: 2rem;
+.githubIcon {
+    width: 1rem;
+    height: 1rem;
+}
+
+#userLogin {
+    font-size: 1rem;
+}
+
+#userBio {
+    font-size: 0.875rem;
+    margin-top: 4rem;
 }
 
 ul {
@@ -102,7 +127,7 @@ ul {
 }
 
 
-@media (max-width: 215px) {
+/* @media (max-width: 215px) {
     ul{
         flex-direction: column;
     }
@@ -165,5 +190,5 @@ ul {
     .avatar > img {
         margin-top: 3px;
     }
-}
+} */
 
