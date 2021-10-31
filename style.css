@@ -133,7 +133,7 @@ ul {
     border-radius: 6px;
 }
 
-
+/**-------MEDIA QUERIES-------*/
 @media (max-width: 215px) {
     main {
         width:13.4375rem;
@@ -172,7 +172,7 @@ ul {
 
 }
 
-/* @media (max-width: 719px) {
+@media (min-width: 216px) {
     body {
         background-color: var(--black);
     }
@@ -188,15 +188,16 @@ ul {
         width:4rem;
         height: 12rem;
         top: 14.2rem;
-        left: center;
+        left: 19.5rem;
         background: linear-gradient(-45deg, rgba(255,205,30,1) 0%, rgba(255,0,142,1) 100%);
         z-index: 1;
     }
 
     main {
-        margin-top: -30.5rem;
-        width: 22,375rem;
         height: 33.75rem;
+        position: absolute;
+        left: 9.75rem;
+        margin-top: -7.3rem;
         border-radius: 6px;
     }
 
@@ -206,6 +207,7 @@ ul {
         width: 5rem;
         height: 0.5rem;
         background-color: var(--black);
+        opacity: 0.75;
         border-radius: 2px;
         top: 1.5rem;
         left: calc(2.8125rem + 2.5rem);
@@ -234,6 +236,7 @@ ul {
 
     #userLogin {
         font-size: 1.1rem;
+        
     }
 
     #userBio {
@@ -241,100 +244,55 @@ ul {
     margin-top: 3rem;
     }
 
-    ul {
+    ul{
         margin-top: 2rem;
+        gap: 1rem;
     }
-} */
+}
 
-/* @media (min-width: 720px) {
-    body {
-        background-color: var(--black);
-    }
-
-    .bg {
-        display: flex;
-    }
-
-    .ribbon {
-        margin-top: -10.7rem;
-        display: block;
-        width:4rem;
-        height: 15rem;
-        background: linear-gradient(-45deg, rgba(255,205,30,1) 0%, rgba(255,0,142,1) 100%);
-        z-index: 1;
-    }
-
-    main {
-        margin-top: -23rem;
-        width: 22,375rem;
-        height: 33.75rem;
-        border-radius: 6px;
-    }
-
-    .hole {
-        display: block;
-        position: relative;
-        width: 5rem;
-        height: 0.5rem;
-        background-color: var(--black);
-        border-radius: 2px;
-        top: 1.5rem;
-        left: calc(2.8125rem + 2.5rem);
-    }
-
-    .avatar { 
-        margin: 2.45rem auto 0;
-        width: 10rem;
-    }
-
-    .avatar span {
-        top: 0.3rem;
-        left:  0.3rem;
-    }
-
-    .avatar > img {
-        width: 8rem;
-        height: 9rem;
-        margin-top: 1.4rem;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-        margin-top: 0rem;
-    }
-
-    #userLogin {
-        font-size: 1.1rem;
-    }
-
-    #userBio {
-    font-size: 1rem;
-    margin-top: 3rem;
-    }
-
-    ul {
-        margin-top: 2rem;
-    }
-} */
-
-
-
-/* @media (min-height: 820px) {
-    .avatar span {
-        top: 1.2rem;
-    }
+@media (min-width: 720px) {
     
-    .avatar > img {
-        margin-top: 36px;
+    .ribbon {
+        left: 50rem;
+        height: 11rem;
     }
-} */
 
-/* @media (max-height: 819px) {
+    main {
+        margin-top: -4.4rem;
+        left: 40.25rem;
+        height: 32.5rem;
+    }
+
+    .hole {
+        top: 0.5rem;
+    }
+
     .avatar span {
-        top: -0.75rem;
+        top: -0.6rem;
     }
 
     .avatar > img {
-        margin-top: 3px;
+        margin-top: 0.6rem;
     }
-} */
+
+    .githubIcon {
+        margin-top: 1.4rem;
+    }
+
+    a {
+        margin-top: -1.5rem;
+    }
+
+    #userLogin {
+        margin-top: 1.5rem;
+    }
+
+    #userBio {
+    font-size: 1.15rem;
+    margin-top: 2.5rem;
+    }
+
+    ul {
+        margin-top: 4.5rem;
+    }
+}
