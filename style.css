@@ -4,7 +4,7 @@
 
 html, body {
     --grey: hsl(240, 9%, 89%);
-    --black: #09090A;
+    --black: #121214;
 
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -24,19 +24,23 @@ body {
 
 .circle {
     display: flex;
-    width: 69.875rem;
-    height: 69.875rem;
-    top: calc(50% - (width / 2));
-    left: calc(50% - (height / 2));
+    width: 70rem;
+    height: 70rem;
     border-radius: 50%;
 }
 
 .circle.red {
-    background: radial-gradient(circle, rgba(255,0,142,0.469625350140056) 0%, rgba(9,9,10,0.8701855742296919) 87%);
+    position: absolute;
+    top: -77rem;
+    right: -18rem;
+    background: radial-gradient(circle, rgba(255,61,110,1) -40%, rgba(18,18,20,0) 70%);
 }
-.circle.yellow {
-    background: radial-gradient(circle, rgba(255,195,35,0.6713060224089635) 0%, rgba(9,9,10,0.8701855742296919) 87%);
 
+.circle.yellow {
+    position: absolute;
+    top: -77rem;
+    left: -18rem;
+    background: radial-gradient(circle, rgba(255,195,35,1) -40%, rgba(18,18,20,0) 70%);
 }
 
 .ribbon {
@@ -47,7 +51,6 @@ main {
     background: url(images/background.svg) no-repeat center/cover;
     width: 23.4375rem;
     height: 50.75rem;
-
 }
 
 .container {
@@ -163,15 +166,6 @@ ul {
 
     .bg {
         display: flex;
-        row-gap: -10px;
-    }
-
-    .circle {
-        width: 100vw;
-        height: 100vw;
-        align-items: flex-start;
-        margin-top: -50%;
-        row-gap: -100px;
     }
 
     .ribbon {
